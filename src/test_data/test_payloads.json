@@ -1,0 +1,26 @@
+{
+    "user_creation": {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "role": "user"
+    },
+    "product_creation":{
+        "name": "Test Product",
+        "price": 99.99,
+        "description": "Test product description"
+    },
+    "order_creation": {
+        "user_id": "123",
+        "products": [
+            {
+                "product_id": "456",
+                "quantity": 2
+            }
+        ],
+        "shipping_address": {
+            "street": "123 test st",
+            "city": "test city",
+            "zip": "12345"
+        }
+    }
+}

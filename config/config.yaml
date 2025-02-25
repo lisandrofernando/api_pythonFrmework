@@ -1,0 +1,58 @@
+# Global Configuration
+project:
+  name: "API Testing Framework"
+  description: "Automated API Testing Framework"
+
+# Environment Settings
+environments:
+  deafult: "dev"
+  timeout: 30
+  retry_attempts: 3
+  retry_delay: 5
+
+# Database Cofiguartions
+databse:
+  connection_timout: 30
+  pool_size: 5
+  retry_attempts: 3
+  charset: "utf8mb4"
+
+# AWS Configuration
+aws:
+  ec2:
+    key_path: "/path/to/key.pem"
+    username: "ec2-user"
+    connection_timeout: 60
+    default_region: "us-west-2"
+
+# API Cofiguration
+api:
+  headers:
+    Content-Type: "application/json"
+    Accept: "application/json"
+  timeout: 30
+  max_retries: 3
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/automation.log"
+  max_file_size: 10485760
+  backup_count: 5
+
+# Test Data
+test_
+  path: "src/test_data"
+  file_types:
+    - ".json"
+    - ".yaml"
+    - ".csv"
+
+# Report Cofiguration
+reporting:
+  output_dir: "reports"
+  report_format: "allure-pytest"
+  screenshot_on_failure: true
+  include_environment: true
+

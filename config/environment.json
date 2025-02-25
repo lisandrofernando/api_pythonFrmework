@@ -1,0 +1,54 @@
+{
+    "dev": {
+        "base_url": "https://dev-api.example.com",
+        "db": {
+            "host": "dev-db.example.com",
+            "port": 3306,
+            "username": "dev-user",
+            "password": "${DB_DEV_PASSWORD}",
+            "database": "dev_database"
+        },
+        "aws":{
+            "region": "us-west-2",
+            "ec2_instance": "i-123456789dev",
+            "access_key": "${AWS_ACCESS_KEY_DEV}",
+            "secret_key": "${AWS_ACCESS_KEY_DEV}"
+        },
+        "api_key": "${API_KEY_DEV}"
+    },
+    "qa": {
+        "base_url": "https://qa-api.example.com",
+        "db": {
+            "host": "qa-db.example.com",
+            "port": 3306,
+            "username": "qa-user",
+            "password": "${DB_QA_PASSWORD}",
+            "database": "qa_database"
+        },
+        "aws":{
+            "region": "us-west-2",
+            "ec2_instance": "i-123456789dev",
+            "access_key": "${AWS_ACCESS_KEY_QA}",
+            "secret_key": "${AWS_ACCESS_KEY_QA}"
+        },
+        "api_key": "${API_KEY_QA}"
+    },
+    "prod": {
+        "base_url": "https://prod-api.example.com",
+        "db": {
+            "host": "prod-db.example.com",
+            "port": 3306,
+            "username": "prod-user",
+            "password": "${DB_DEV_PASSWORD}",
+            "database": "prod_database"
+        },
+        "aws":{
+            "region": "us-west-2",
+            "ec2_instance": "i-123456789dev",
+            "access_key": "${AWS_ACCESS_KEY_PROD}",
+            "secret_key": "${AWS_ACCESS_KEY_PROD}"
+        },
+        "api_key": "${API_KEY_PROD}"
+    }
+
+}
