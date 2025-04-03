@@ -46,11 +46,14 @@ class FileHandler:
             return json.load(file)
     
     @staticmethod
-    def write_json(file_path):
-        """
-        """
-        with open(file_path, 'r') as file:
-            return json.dump(data, file, indent=4)
+    def write_json(file_path, data):
+      """
+      Write JSON data to a file.
+      :param file_path: Path to the file.
+      :param data: Data to be written to the file.
+      """
+      with open(file_path, 'w') as file:
+          json.dump(data, file, indent=4)
         
     @staticmethod
     def read_file(file_path):
