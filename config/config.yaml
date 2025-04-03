@@ -42,7 +42,7 @@ logging:
   backup_count: 5
 
 # Test Data
-test_
+test_data:
   path: "src/test_data"
   file_types:
     - ".json"
